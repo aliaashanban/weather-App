@@ -1,0 +1,141 @@
+*{
+    box-sizing: border-box;
+}
+.logo{
+    cursor: pointer;
+}
+.navbar-brand{
+    color: rgb( 13, 110, 253);
+}
+.navbar-brand:hover{
+    color: rgb( 13, 110, 253);
+}
+
+.nav-link:hover{
+    border: solid .125rem  rgb( 13, 110, 253);
+    border-radius: 30px;
+    box-shadow:0 0.5rem 1rem rgba(4, 2, 158, 0.416);
+    transition: box-shadow   .5s;
+    color:rgb( 13, 110, 253) ;
+}
+
+
+.home{
+    color:rgb( 13, 110, 253) ;
+    border: solid .125rem  rgb( 13, 110, 253);
+    border-radius: 30px;
+}
+.hero{
+ background-image:url(../images/pexels-aaronburden-2449543.jpg);
+
+ background-position: center center;
+ background-size: cover;
+ height: 100vh;
+}
+footer{
+    /* background-image:linear-gradient(to right,rgba(104, 186, 227, 0.582),rgba(14, 133, 212, 0.062)) */
+    background-color:rgba(248, 249, 250, 0.863);
+
+}
+form {
+    /* This bit sets up the horizontal layout */
+    display:flex;
+    flex-direction:row;
+    
+    /* This bit draws the box around it */
+    border:1px solid grey;
+    border-radius: 20px;
+  
+    /* I've used padding so you can see the edges of the elements. */
+    padding:3px;
+    background-color: white;
+  }
+  
+  input {
+    /* Tell the input to use all the available space */
+    flex-grow:2;
+    /* And hide the input's outline, so the form looks like the outline */
+    border:none;
+    width: 75%;
+    border-radius: 20px;
+
+  }
+  
+  /* remove the input focus blue box, it will be in the wrong place. */
+  input:focus {
+    outline: none;
+  }
+  
+  /* Add the focus effect to the form so it contains the button */
+  form:focus-within { 
+    outline: 1px solid blue 
+  }
+  
+  #subbtn {
+    /* Just a little styling to make it pretty */
+    border:1px solid blue;
+    background:blue;
+    color:white;
+    width: 30px;
+    border-radius: 1.875rem;
+    padding-block: 4px ;
+    padding-inline: 1px;
+    text-align: center;
+  }
+  #subbtn:hover{
+    background-color:#f79489;
+    transition: all .5s;
+  }
+  .icons {
+    padding-left:200px;
+    
+  }
+ 
+  .icons i{
+margin-left: 30px;
+font-size: 20px;
+color:rgba(13, 77, 253, 0.756);
+  }
+  .icons i:hover{
+    color:#f79489;
+    transition: all .5s;
+  }
+  #subsrch{
+    border:1px solid #f79489;
+    background:#ff897c;
+    color:white;
+    width: 30px;
+    border-radius: 1.875rem;
+    padding-block: 4px ;
+    padding-inline: 1px;
+    text-align: center;
+  }
+  
+ #today{
+    padding: 10px;
+    text-align: center;
+    font-weight: 400;
+    margin-inline: 0px;
+ }
+  .day{
+    float: left;
+    color: #f73620;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .date{
+    float: right;
+    color: #f73620;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .custom{
+    margin-top: -5px;
+    margin-bottom: 5px;
+    color:rgb( 13, 110, 253)  ;
+  }
+  .next-day{
+    color: #f73620;
+    font-size: 20px;
+    font-weight: 600;
+  }
