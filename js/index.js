@@ -97,7 +97,7 @@ function locationSearch(){
     searchInput.value='';
     // console.log(location);
     if(!location)return;
-    let apiURL=`http://api.openweathermap.org/geo/1.0/direct?q=${location}&appid=${apiKey}`;
+    let apiURL=`https://api.openweathermap.org/geo/1.0/direct?q=${location}&appid=${apiKey}`;
     fetch(apiURL).then(res=>res.json()).then(data=>{
         let {name,lat,lon,country,state}=data[0];
         console.log(data);
